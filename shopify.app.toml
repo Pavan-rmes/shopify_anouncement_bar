@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "my-project-1"
+client_id = "d218e13499cf7f8dd428daf412ac0bd2"
+application_url = "https://invite-ends-bidder-beauty.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://invite-ends-bidder-beauty.trycloudflare.com/auth/callback",
+  "https://invite-ends-bidder-beauty.trycloudflare.com/auth/shopify/callback",
+  "https://invite-ends-bidder-beauty.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-17eef2f9.myshopify.com"
